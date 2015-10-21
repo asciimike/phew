@@ -1,0 +1,16 @@
+{
+  "name": "phew",
+  "version": "0.0.1",
+  "description": "Node.js + Firebase powered RGB LED lightbulb",
+  "main": "server.js",
+  "author": "Mike McDonald <mcdonald@firebase.com>",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/mcdonamp/phew.git"
+  },
+  "license": "Apache 2.0",
+  "dependencies": {
+    "firebase": "2.x.x",
+    "i2c": "0.1.8"
+  }
+}

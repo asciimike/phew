@@ -1,5 +1,5 @@
 # Phew RGB Lightbulb, powered by Firebase
-Phew, as in, "Phew, I'm glad that's done" is an easy (yes, easy, we promise) sample that demonstrates connecting an IoT device to an iOS app through [Firebase](www.firebase.com). You'll need a Firebase application, so if you don't have a Firebase account, [sign up for free](www.firebase.com/signup) right now!
+Phew, as in, "Phew, I'm glad that's done" is an easy (yes, easy, we promise) sample that demonstrates connecting an IoT device to an iOS app through [Firebase](https://www.firebase.com). You'll need a Firebase application, so if you don't have a Firebase account, [sign up for free](https://www.firebase.com/signup) right now!
 
 This project was initially built for a tech talk entitled ["Simplifying IoT with Firebase"](http://www.meetup.com/NSLondon/events/225697907/) at [NSLondon](http://www.meetup.com/NSLondon/) on 22 October. Slides for this talk are available [here](https://github.com/mcdonamp/phew/blob/master/Simplifying%20IoT%20with%20Firebase%20(iOS).pdf).
 
@@ -54,7 +54,7 @@ open PhewApp.xcworkspace
 
 Then build and run on the simulator or your favorite iOS device :)
 
-You can also [play with the App online](https://goo.gl/oWUNvx) via [Appetize.io](www.appetize.io).
+You can also [play with the App online](https://goo.gl/oWUNvx) via [Appetize.io](https://www.appetize.io).
 
 ## Questions, comments, contributions?
-Contact me [@asciimike](www.twitter.com/asciimike) or mcdonald <at> firebase <dot> com to learn more about Firebase, IoT, iOS development, or with any burning questions you may have!
+Contact me [@asciimike](https://www.twitter.com/asciimike) or mcdonald <at> firebase <dot> com to learn more about Firebase, IoT, iOS development, or with any burning questions you may have!

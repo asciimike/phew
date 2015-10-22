@@ -1,0 +1,8 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.0'
+
+target 'PhewApp' do
+  pod "Firebase", "~> 2.4.0"
+  pod "RSColorPicker", "~> 0.9"
+end
+

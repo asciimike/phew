@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="b0u-QZ-plr">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
+    </dependencies>
+    <scenes>
+        <!--Phew View-->
+        <scene sceneID="oL1-dH-doe">
+            <objects>
+                <viewController title="Phew View" id="stF-un-RtQ" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="N3a-fT-evS"/>
+                        <viewControllerLayoutGuide type="bottom" id="cMW-Kw-pUB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ekG-Wi-cM6">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gnN-kx-0x9">
+                                <rect key="frame" x="160" y="72" width="280" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Of1-E7-ehM">
+                                <rect key="frame" x="160" y="360" width="280" height="88"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wws-fi-aX4">
+                                        <rect key="frame" x="11" y="11" width="66" height="66"/>
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="R: XXX, G: XXX, B: XXX" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Eut-wN-L8P">
+                                        <rect key="frame" x="85" y="33" width="187" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="Wws-fi-aX4" firstAttribute="top" secondItem="Of1-E7-ehM" secondAttribute="top" constant="11" id="ArB-lf-8XB"/>
+                                    <constraint firstItem="Wws-fi-aX4" firstAttribute="leading" secondItem="Of1-E7-ehM" secondAttribute="leading" constant="11" id="DOb-wY-KTz"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wws-fi-aX4" secondAttribute="bottom" constant="11" id="Wpo-D0-2Vi"/>
+                                    <constraint firstAttribute="trailing" secondItem="Eut-wN-L8P" secondAttribute="trailing" constant="8" id="hqA-cR-qMO"/>
+                                    <constraint firstItem="Eut-wN-L8P" firstAttribute="leading" secondItem="Wws-fi-aX4" secondAttribute="trailing" constant="8" id="ygu-z1-Tzv"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="gnN-kx-0x9" firstAttribute="centerY" secondItem="ekG-Wi-cM6" secondAttribute="centerY" id="OB3-wX-Laf"/>
+                            <constraint firstItem="Of1-E7-ehM" firstAttribute="top" secondItem="gnN-kx-0x9" secondAttribute="bottom" constant="10" id="UbM-Le-mAA"/>
+                            <constraint firstItem="Of1-E7-ehM" firstAttribute="centerX" secondItem="ekG-Wi-cM6" secondAttribute="centerX" id="d9l-it-Ymy"/>
+                            <constraint firstItem="gnN-kx-0x9" firstAttribute="centerX" secondItem="ekG-Wi-cM6" secondAttribute="centerX" id="jhj-Ml-YEZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Phew View" id="noG-Rn-Nxk"/>
+                    <connections>
+                        <outlet property="colorLabel" destination="Eut-wN-L8P" id="fh4-Qa-t22"/>
+                        <outlet property="colorPickerHolder" destination="gnN-kx-0x9" id="goO-FG-3Vn"/>
+                        <outlet property="colorSwatchHolder" destination="Wws-fi-aX4" id="4Sy-ho-lcn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="E3y-gY-f6R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="685"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="aXh-83-WVD">
+            <objects>
+                <navigationController id="b0u-QZ-plr" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Du9-ws-cRg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="stF-un-RtQ" kind="relationship" relationship="rootViewController" id="tmK-ma-O7l"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uH9-qi-AMD" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-600" y="685"/>
+        </scene>
+    </scenes>
+</document>

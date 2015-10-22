@@ -17,6 +17,7 @@ Once you've got everything, wire it up like so:
 ![Fritzing wiring diagram for Phew Bulb](https://github.com/mcdonamp/phew/blob/master/Bulb/PhewBulb.png)
 
 Instructions:
+
 1. Connect Ground (BB Pin 1) to Ground (BlinkM Pin 1)
 2. Connect Power (BB Pin 3) to Power (BlinkM Pin 2)
 3. Connect SCL (BB Pin 19) to C (BlinkM Pin 4)

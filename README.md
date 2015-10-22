@@ -57,4 +57,4 @@ Then build and run on the simulator or your favorite iOS device :)
 You can also [play with the App online](https://goo.gl/oWUNvx) via [Appetize.io](https://www.appetize.io).
 
 ## Questions, comments, contributions?
-Contact me [@asciimike](https://www.twitter.com/asciimike) or mcdonald <at> firebase <dot> com to learn more about Firebase, IoT, iOS development, or with any burning questions you may have!
+Contact me [@asciimike](https://www.twitter.com/asciimike) or mcdonald at firebase dot com to learn more about Firebase, IoT, iOS development, or with any burning questions you may have!

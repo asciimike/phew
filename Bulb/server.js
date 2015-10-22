@@ -9,7 +9,7 @@ wire.writeBytes(0x6f,[/* empty array */], i2cCallback); // Turn off LED script
 
 /* Replace this with the name of your firebase */
 var ref = new Firebase('https://<YOUR-FIREBASE-APP>.firebaseio.com');
-ref.limitToLast(10).on('child_added', function(snapshot) {
+ref.child('devices/phew_bulb').on('value', function(snapshot) {
   var color = snapshot.val();
   writeRGB(color.r | 0, color.g | 0, color.b | 0);
 });
